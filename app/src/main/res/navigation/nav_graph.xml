@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/heroListFragment">
+
+    <fragment
+        android:id="@+id/heroListFragment"
+        android:name="com.example.heroapitask.ui.HeroListFragment"
+        android:label="HeroListFragment" >
+        <action
+            android:id="@+id/action_heroListFragment_to_heroDetailsFragment"
+            app:destination="@id/heronDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/heronDetailFragment"
+        android:name="com.example.heroapitask.ui.HeroDetailFragment"
+        android:label="fragment_hero_detail"
+        tools:layout="@layout/fragment_hero_details" />
+</navigation>
